@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang = "es">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script type = "text/javascript" src="script.js"></script>
+        <title> Laboratorio 04 </title>
+    </head>
+    
+    <body>
+        <header class = "title">
+            <h1><strong>Laboratorio 4</strong></h1>
+            <h3>Adriana Paola Salinas García</h3>
+            <h4>A01703675@itesm.mx</h4>
+        </header>
+    
+    <nav>
+        <table>
+        <tr> 
+            <td> <a href="#preguntas"> Preguntas </a> </td>
+            <td> <a href="#biblio"> Bibliografía </a> </td>
+            <td> <a href="#ejercicios"> Ejercicios </a> </td>
+        </tr>
+        </table>
+    </nav>    
+       
+    <section>
+            <h2 id = "preguntas"> Preguntas </h2>
+            
+            <ul>
+                <li><strong>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</strong><br>
+                <br></li>
+                <strong>Diferencias:</strong>
+                <ul>
+                    <li>Java es un lenguaje que esta orientado a objetos puro mientras que JavaScript esta basado en prototipos.</li>
+                    <li>JavaScript no es un lenguaje compilado, este se integra directamente en las páginas HTML siendo interpretado por el navegador.</li>
+                    <li>Java es más complejo ya que es un leguaje con más capacidades, por otro lado, JavaScript tiene menos capacidades y es más sencillo.</li>
+                    <li>JavaScript es estándar, Java no.</li>
+                    <li>Java necesita un kit de desarrollo y máquina virtual para poder trabajar, mientras que JavaScript solo necesita un editor de texto.</li>
+                     <li>En Java necesitamos declarar las variables, por otro lado, en JavaScript podemos usar una variable de manera flexible.</li>
+                     <li>Java es independiente de la plataforma con el código de bytes, mientras que en JavaScript necesita ser escrito de acuerdo con la compatibilidad del navegador.</li>
+                     <li>No existen reglas para constructores en JavaScript como en Java.</li>
+                    <li>JavaScript tiene mas popularidad con respecto a proyectos en el desarrollador de GitHub creados en los últimos 5 años. [1]</li>
+                </ul>
+                <br>
+                <strong>Semejanzas:</strong>
+                    <ul>
+                        <li>Ambos tienen una sintaxis similar a C.</li>
+                        <li>Ambos cuentan con una extensa documentación, foros en línea y comunidades en las que se puede aprender fácilmente.</li>
+                        <li>Ambos tienen la capacidad de trabajar tanto en un buscador como en un servidor. [1]<br><br><br></li>
+                    </ul>
+                
+                <li><strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</strong><br>
+                    <ul>
+                        <li><strong>getDate(): </strong>Nos devuelve el día del mes, del 1 al 31.</li>
+                        <li><strong>toTimeString(): </strong>Convierte la parte de tiempo de un objeto Date en una cadena.</li>
+                        <li><strong>parse(): </strong>Analiza la fecha y devuelve el número de milisegundos transcurridos desde el 1 de enero de 1970 hasta la fecha analizada.</li>
+                        <li><strong>getDay(): </strong>Regresa el día de la semana. Entre 0 (domingo) y 6 (sábado).</li>
+                        <li><strong>getMinutes(): </strong>Devuelve los minutos, entre 0 y 59.</li>
+                        <li><strong>getMonth():  </strong>Devuelve el mes. Entre 0 (enero) y 11 (diciembre)</li>
+                        <li><strong>setDate(): </strong>Actualiza el día del mes. [2]</li>
+
+                    </ul>
+                    <br><br><br>
+                </li>
+                
+                <li><strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong> <br>
+                    <ul>
+                        <li><strong>lenght(): </strong>Para conocer el número de elementos del arreglo.</li>
+                        <li><strong>push(): </strong>Acepta cualquier número de argumentos y los agrega al final del arreglo.</li>
+                        <li><strong>join(): </strong>Junta todos los elementos de una lista separándolos por el carácter que se indique dentro del paréntesis.</li>
+                        <li><strong>pop(): </strong>Elimina el último elemento del arreglo y disminuye de su longitud una posición.</li>
+                        <li><strong>includes(): </strong>Determina si el array contiene un determinado elemento.</li>
+                        <li><strong>toString(): </strong>Para convertir un arreglo en una cadena. Mostrará todo el array en una cadena en la que cada elemento estará separado por comas. [3]</li>
+
+                    </ul>
+                    <br><br><br></li>
+                   
+                <li><strong>¿Cómo se declara una variable con alcance local dentro de una función?</strong><br> Dentro de la función en la que se utilizará la variable se debe declarar la variable. Ejemplo: <br><br>
+                function crearMensaje() {<br>
+                    var mensaje = "Hola";<br>
+                }<br>
+                <br>Lo que significa que la variable solo podrá ser usada dentro de la función, es importante declararla con var, ya que de otro modo se volvería global. [4]<br><br><br></li>
+                
+                <li><strong>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</strong><br>Las variables globales se convierten en atributos del objeto window y aunque la función termine esta no se eliminará sino hasta que la ventana sea cerrada. El uso de variables globales debe ser justificado con claridad. [5]<br><br><br></li>
+                
+                <li><strong>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</strong><br> Se utilizaría el método match() , ya que este se usa para buscar coincidencias con cualquier expresión regular y en caso de que esta llegue a encontrarse entonces se devolverá como un arreglo, de no ser así retornará Null. En una página web se puede implementar en la búsqueda de contenido, pues le sería de gran utilidad al usuario por la facilidad de encontrar lo que busca solo ingresando palabras clave por asi decirlo.
+                [6]<br><br></li>
+            </ul>
+    
+        </section>
+        
+        <hr>
+        
+        
+        <section>
+
+             <h2 id="ejercicios"> Ejercicios </h2>
+
+
+            <button onclick="tablaCuadradosCubos()">Cubos y Cuadrados</button><br>
+          
+            <button onclick="suma()">Suma</button><br>
+          
+            <button onclick="numPosNeg0()">Contador</button><br>
+          
+            <button onclick="promedios()">Promedios </button><br>
+            
+            <button onclick="numeroInvertido()">Inverso</button><br>
+         
+            <button onclick="theatreSquare()">Theatre Square</button>
+            <p><strong>Descripción del problema 6:</strong> </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+             
+            <h2 id="biblio"> Bibliografía </h2>
+
+            <ul>
+                <li>[1] <a href="https://www.educba.com/java-vs-javascript/">https://www.educba.com/java-vs-javascript/</a></li>
+                <li>[2] <a href="https://tutobasico.com/date-javascript/">https://tutobasico.com/date-javascript/</a></li>
+                <li>[3] <a href="https://francescricart.com/metodos-javascript/">https://francescricart.com/metodos-javascript/</a></li>
+                <li>[4] <a href="https://uniwebsidad.com/libros/javascript/capitulo-4/ambito-de-las-variables">https://uniwebsidad.com/libros/javascript/capitulo-4/ambito-de-las-variables</a><br></li>
+                <li>[5] <a href="http://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?cod=59&inicio=">http://www.tutorialesprogramacionya.com/javascriptya/temarios/descripcion.php?cod=59&inicio=</a><br></li>
+                <li>[6] <a href="https://www.geeksforgeeks.org/javascript-match/">https://www.geeksforgeeks.org/javascript-match/</a><br><br></li>
+            </ul>
+            <hr>
+        </section>
+         
+        <footer>
+            <p><strong>Brackets</strong> </p>
+            <p><a href="http://brackets.io">Brackets.io</a> </p>
+        </footer>
+        
+        
+     </body>
+</html>
