@@ -22,6 +22,7 @@ function tablaCuadradosCubos(){
 }
 
 
+
 function suma(){
     var numero1 = Math.floor(Math.random() * 10);  //Para generar numeros aleatorios
     var numero2 = Math.floor(Math.random() * 10);
@@ -66,8 +67,8 @@ function contador(array) {
 }
 
 
-function numPosNeg0(){
-    var numeros = arreglo();
+function numPosNeg(){
+    var numeros = crearArreglo();
     var respuesta = contador(numeros);
     document.write("" + numeros 
                    + "<br><br>" 
@@ -187,3 +188,113 @@ function theatreSquare(){
         //document.write(total); 
     }
 }
+
+
+
+/*Ejercicio 6 EXTRA*/
+
+
+class Radio{
+    constructor(volume, frequency, power, modulation){
+        this.volume = volume;
+        this.frequency = frequency;
+        this.power = power;
+        this.modulation = modulation;
+    }
+    
+    volumeUp(){
+        if(this.volume < 45){
+            this.volume+=5;
+        }
+    }
+    
+    volumeDown(){
+        if(this.volume > 0){
+            this.volume-=5;
+        }
+    }
+    
+    frequencyUp(){
+        if(this.modulation){
+            if(this.frequency < (1080-0.1))
+                this.frequency += 0.1;
+        } else {
+            if(this.frequency < (1705-10))
+                this.frequency+=10;
+        }
+    }
+    
+    frequencyDown(){
+        if(this.modulation){
+            if(this.frequency < (1080-0.1))
+                this.frequency += 0.1;
+        } else {
+            if(this.frequency < (1705-10))
+                this.frequency+=10;
+        }
+    }
+    
+    changeModulation(){
+        this.frequency = 1005;/*Just because*/
+		if(this.modulation) {
+			this.modulation = false;
+		}else {
+			this.modulation = true;
+		}   
+    }
+    
+    turnOnOff(){
+        if(this.power) {
+			this.power = false;
+		}else {
+			this.power = true;
+		}
+    }
+}
+
+function problemRadio(){
+    var radio = new Radio(5,1005,true,true);
+    document.write("Valores Iniciales: " +"<br>" 
+                    + "Volumen: " + radio.volume + "<br>"
+                    + "Frecuencia: " + radio.frequency + "<br>" 
+                    + "Encendido: " + radio.power + "<br>"
+                    + "Modulation: " + radio.modulation +"<br>");
+    document.write("Jugaremos con el comportamiento del radio:" + "<br><br>");
+    
+    radio.volumeUp();
+    radio.volumeUp();
+    radio.volumeDown();
+    radio.frequencyUp();
+    radio.frequencyUp();
+    radio.frequencyDown();
+    radio.changeModulation();
+    radio.frequencyUp();
+    radio.frequencyUp();
+    radio.frequencyDown();
+    radio.turnOnOff();
+    
+    
+    document.write("radio.volumeUp()" + "<br>" +
+    "radio.volumeUp()" + "<br>" +
+    "radio.volumeDown()" + "<br>" +
+    "radio.frequencyUp()" + "<br>" +
+    "radio.frequencyUp()" + "<br>" +
+    "radio.frequencyDown()" + "<br>" +
+    "radio.changeModulation()" + "<br>" +
+    "radio.frequencyUp()" + "<br>" +
+    "radio.frequencyUp()" + "<br>" +
+    "radio.frequencyDown()" + "<br>" +
+    "radio.turnOnOff()" + "<br><br>");
+    
+    document.write("Después de ejecutar estos métodos, el estado del radio sería: " +"<br>" 
+                    + "Volumen: " + radio.volume + "<br>"
+                    + "Frecuencia: " + radio.frequency + "<br>" 
+                    + "Encendido: " + radio.power + "<br>"
+                    + "Modulation: " + radio.modulation +"<br>");
+    
+    document.write('<br><br><a href="Laboratorio04.html"> Regresar a la página principal</a>');
+    
+    
+}
+
+
