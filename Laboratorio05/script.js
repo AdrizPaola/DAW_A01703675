@@ -98,6 +98,7 @@ function resultados(){
     let total = 0;
     let paga = 0;
     let invalida=0;
+    
  
     if(!nombre1.match(/[a-z]/)||nombre1==0){
         document.getElementById("msg1").innerHTML = "Ingresa un nombre válido";
@@ -131,10 +132,13 @@ function resultados(){
     let aux="";
 
     if(invalida==0){
-        total=(ren + iluminacion + aguita + alim + internet);
-        total = ingre - total; 
+        
+        total=parseInt(ren) + parseInt(iluminacion) + parseInt(aguita) + parseInt(alim) + parseInt(internet);
+        
+        total = parseInt(ingre - total);
+        
         aux+="Hola " + nombre1 + " ";
-        aux+="El ingreso restante después de tus pagos es de: ";
+        aux+="el ingreso restante después de tus pagos es de: ";
         aux += total;
         document.getElementById("res").innerHTML = aux;
 
