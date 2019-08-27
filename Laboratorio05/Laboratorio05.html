@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang = "es">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <title> Laboratorio 05 </title>
+    </head>
+    
+    <body>
+        <header class = "title">
+            <h1><strong>Laboratorio 5</strong></h1>
+            <h3>Adriana Paola Salinas García</h3>
+            <h4>A01703675@itesm.mx</h4>
+        </header>
+    
+    <nav>
+        <table>
+        <tr> 
+            <td> <a href="#preguntas"> Preguntas </a> </td>
+            <td> <a href="#ejercicios"> Ejercicios </a> </td>
+            <td> <a href="#biblio"> Bibliografía </a> </td>
+        </tr>
+        </table>
+    </nav>    
+       
+    <section>
+            <h2 id = "preguntas"> Preguntas </h2>
+            
+            <ul>
+                
+                <li><strong>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</strong><br>  Porque así se puede notificar al usuario que se ha cometido algún error sin la necesidad de esperar la respuesta del servidor. Al notificar este tipo de errores de manera inmediata se mejora la experiencia del usuario. Cuando se validan formularios se comprueba que los datos ingresados cumplan con los requisitos para ser aceptados, de modo que se previene el envío de formularios erróneos al servidor  que se tenga que esperar una respuesta que al final de igual manera será errónea. [1]<br><br><br></li>
+                
+                <li><strong>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</strong><br>Se puede hacer simplemente desactivando JavaScript del navegador. Para ello se abre el navegador, la configuración, se hace clic en Configuracion avanzada, después en "Privacidad y Seguridad" se selecciona Configuración de contenido, clic en JavaScript y Actve (no permitido). [2]<br><br><br></li>
+                
+                <li><strong>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</strong><br> ´Porque para muchas personas esto puede no tener importancia, pero pues en realidad el cliente obtiene beneficios ya que obtiene respuestas inmediatas, además de que de este modo se previenen problemas de seguridad. <br><br></li>
+            </ul>
+    
+        </section>
+        
+        <hr>
+        
+        
+        <section>
+
+            <h2 id="ejercicios" >Validador</h2>
+
+            <p>Tu contraseña debe de tener contener al menos 8 caracteres, incluidos letras, números y símbolos especiales.</p>
+
+
+            <label>Ingresa la contraseña: </label><input type="text" id="con1" value="">
+            <br>
+
+            <label>Vuelva a ingresar la contraseña: </label><input type="text" id="con2">
+            <button onclick="evaluarContraseñas()">Checar</button>
+            <br>
+            <p id="feedback"></p>
+
+
+            <hr>
+
+        </section>
+
+        
+     <section>
+                <h2>Venta de Celulares</h2>
+    
+                <p>Selecciona la cantidad de productos que deseas adquirir</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>iPhone X</th>
+                            <th>Huawei P30</th>
+                            <th>Samsung S10</th>
+                        </tr>
+                    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$23,000</td>
+                            <td>$18,000</td>
+                            <td>$17,000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="iphone.jpg" width="140" height="160" border="3" alt="iphone" ></td>
+                            <td><img src="huawei.jpg" width="140" height="160" border="3" alt="huawei"></td>
+                            <td><img src="samsung.png"width="140" height="160" border="3" alt="samsung"></td>
+                        </tr>
+                    
+                    </tbody>
+                    
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <select id="cel1">
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="cel2">
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="cel3">
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td><button onclick="agregarProducto()">Comprar</button></td>
+                            </tr>
+                        
+                    </tfoot>
+                </table>
+                
+                <p><strong> Total a pagar: </strong></p>
+                <p id="pago"></p><br>
+
+                <hr>
+    
+        </section>    
+        
+        
+        
+        
+        <section>
+            <h2>Calcula tus gastos mensuales</h2>
+            <br>
+            <p>¿Cuánto dinero te queda para ti?</p>
+            <br>
+            <label>Ingresa tu nombre:</label><input type="text" id="nombre"><p id="msg1"></p>
+            <br>
+            <label>Captura tus Ingresos: <input type="text" id="ingresos"> pesos </label><p id="msg2"></p> <br>
+            <label>Pago de Renta: <input type="text" id="renta"> pesos </label><p id="msg3"></p> <br>
+            <label>Pago de Luz: <input type="text" id="luz"> pesos  </label><p id="msg4"></p> <br>
+            <label>Pago de Agua: <input type="text" id="agua"> pesos </label><p id="msg5"></p> <br>
+            <label>Pago de Comida: <input type="text" id="comida"> pesos </label><p id="msg6"></p> <br>
+            <label>Pago de Internet: <input type="text" id="inter"> pesos </label><p id="msg7"></p> <br>
+            <button onclick="resultados()">Calcular</button>
+            <p></p>
+            <p id=res></p>
+        </section>
+        
+        
+        
+        
+        
+        <hr>
+        
+        <section>
+             
+            <h2 id="biblio"> Bibliografía </h2>
+
+            <ul>
+                <li>[1] <a href="https://blog.michelletorres.mx/validar-formularios-con-javascript/">https://blog.michelletorres.mx/validar-formularios-con-javascript/</a></li>
+                <li>[2] <a href="https://support.google.com/adsense/answer/12654?hl=es-419">https://support.google.com/adsense/answer/12654?hl=es-419</a></li>
+            </ul>
+            <hr>
+        </section>
+         
+        <footer>
+            <p><strong>Brackets</strong> </p>
+            <p><a href="http://brackets.io">Brackets.io</a> </p>
+        </footer>
+        
+        <script type = "text/javascript" src="script.js"></script>
+        
+     </body>
+</html>

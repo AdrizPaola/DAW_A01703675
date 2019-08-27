@@ -1,0 +1,55 @@
+header{
+   background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 10px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-bottom-color: fuchsia;
+    border-top-color: fuchsia;
+    border-right-color: fuchsia;
+    border-left-color: fuchsia;
+}
+
+body{
+    background-color: #fdd1ff;
+    margin: 0 auto;
+    font-family:cursive;
+    color: black;
+    padding: 1em 1em;
+    max-width:50em;
+}
+
+
+p{
+    text-align: center;
+    font-family:cursive;
+    font-size: 14px;
+}
+
+li{
+    text-align: justify;
+    font-family:cursive;
+    font-size: 15px;
+}
+
+footer{
+    font-family:cursive;
+    font-size: 12px;
+}
+
+table{
+    font-size: 15px;
+    font-family: cursive;
+    padding: 4px 8px;
+    width: 100%;
+}
+
+table td{
+    padding: 5px 10px;
+    text-align: center;
+}
