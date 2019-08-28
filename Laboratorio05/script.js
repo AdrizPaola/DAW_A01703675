@@ -133,14 +133,24 @@ function resultados(){
 
     if(invalida==0){
         
-        total=parseInt(ren) + parseInt(iluminacion) + parseInt(aguita) + parseInt(alim) + parseInt(internet);
+        total = parseInt(ren) + parseInt(iluminacion) + parseInt(aguita) + parseInt(alim) + parseInt(internet);
         
         total = parseInt(ingre - total);
         
-        aux+="Hola " + nombre1 + " ";
-        aux+="el ingreso restante después de tus pagos es de: ";
-        aux += total;
-        document.getElementById("res").innerHTML = aux;
+        if(total > 0){
+            aux+="Hola " + nombre1 + " ";
+            aux+="el ingreso restante después de tus pagos es de: ";
+            aux += total;
+            document.getElementById("res").innerHTML = aux;  
+        } else if(total < 0){
+            aux+="Hola " + nombre1 + " ";
+            aux+="es una pena, para solventar gastos te hacen falta ";
+            aux += Math.abs(total);
+            document.getElementById("res").innerHTML = aux; 
+        } else{
+            document.getElementById("res").innerHTML = "Apenas ajustaste cuentas, no te quedo dinero extra"
+        }
+        
 
     }else{
         alert("Llena los campos correctamente");
