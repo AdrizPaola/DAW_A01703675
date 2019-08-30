@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang = "es">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <title> Laboratorio 06 </title>
+    </head>
+    
+    <body>
+        <header class = "title">
+            <h1><strong>Laboratorio 6</strong></h1>
+            <h3>Adriana Paola Salinas García</h3>
+            <h4>A01703675@itesm.mx</h4>
+        </header>
+    
+    <nav>
+        <table>
+        <tr> 
+            <td> <a href="#preguntas"> Preguntas </a> </td>
+            <td> <a href="#ejercicios"> Ejercicios </a> </td>
+            <td> <a href="#biblio"> Bibliografía </a> </td>
+        </tr>
+        </table>
+    </nav>    
+         
+        
+    <main>
+        <section>
+            <h2 id = "preguntas"> Preguntas </h2>
+            
+            <ul>
+                
+                <li><strong>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</strong><br>  
+                    <ul>
+                        <li><strong>static: </strong>Es el valor ya predeterminado del atributo, lo que ocurre es que los elementos se colocarán de forma normal siguiendo el flujo del código HTML. Con static no se logra ningún posicionamiento especial de los elementos, por lo que los atributos top, left, right y bottom no nos son de utilidad. [1] </li>
+                        <li><strong>absolute: </strong> Permite posicionar los elementos definiendose por los valores de los atributos top, left, bottom y right con los cuales se indica la distancia entre un punto y otro.
+                        Los elementos con posicionamiento absoluto no se afectan por su lugar de aparición en el HTML, sino que su posición es independiente de la posición del resto de elementos.
+                        Los valores de los atributos son la distancia con respecto al primer elemento que tenga un valor diferente de static. [1]</li>
+                        <li><strong>relative: </strong> El elemento si forma parte del flujo normal del resto de los componentes, por lo tanto su posición esta en función de donde se inserte en el código. Para este tipo de posición se utilizan los atributos top y left para definir la distancia a la que se desea colocar respecto al punto actual del flujo del HTML. [1] </li>
+                        <li><strong>fixed: </strong>Nos sirve para posicionar el elemento de una forma absoluta pero con una posición siempre fija, sin importar el desplazamiento a través del navegador el elemento aparecerá en la misma posición [1]</li>
+                        <li><strong>inherit: </strong>Para indicar que el valor debe heredarse del elemento padre [1].</li>
+                    </ul><br><br><br></li>
+                
+                <li><strong>¿Cuáles son los valores estándar para la propiedad visibility?</strong><br> 
+                    <ul>
+                        <li><strong>visible: </strong> Para mostrar el elemento de una forma normal. </li>
+                        <li><strong>hidden: </strong> Se esconde a un elemento, pero el resto de los elementos se colocan de cierta forma como si el invisible estuviera presente.</li>
+                        <li><strong>collapse: </strong> Para tablas, las filas o columnas se esconden y el espacio que requieren es ocupado. [2]</li>
+                    
+                    </ul>
+                    
+                <br><br><br></li>
+                
+                <li><strong>¿Qué es el zIndex y para qué sirve? </strong><br> Es una propiedad que nos permite ordenar los elementos, de modo que se puedan superponer y determinar cuales cubren a otros. Cuando un elemento tiene mayor z-index generalmente cubre a otro menor.[3] <br><br></li>
+            </ul>
+    
+        </section>
+        
+        <hr>
+        
+       
+        
+        
+        <section>
+            <h2 id = "ejercicios"> Ejercicios </h2>
+
+
+            <p class="top"><strong>Marca de Agua</strong></p><br>
+            <div class="foto"><img src ="Imagenes/alex.jpeg" alt="mono">
+            </div>
+
+            <h5>Te extraño mono :c</h5>
+
+
+            <p id = "texto" class = "textoFormato" onmouseover="cambiaTexto()"  onmouseout="salidaTexto()"><strong>¡Pasa por aquí el cursor, tengo algo muy importante que decirte!</strong></p><br>
+
+
+            <hr>
+
+            <p class="top"><strong>Ejercicio Top Property</strong></p><br>
+            <p class="marco">El marco verde es de posición relativa, para contener los otros "recuadros"</p>
+            <div class="a">
+                <div class="b">Posición absoluta (fija dentro de cuadro verde) a una distancia de 30px de top</div>  
+                <div class="c">Posición absoluta (fija dentro de cuadro verde) a una distancia de 30px de bottom. Nunca sobrepasará los límites del cuadro verde</div>
+            </div>
+
+
+            <hr>
+
+            <br><p class="top"><strong>Drag-And-Drop</strong></p>
+            
+            <p class="marco">Coloca la imagen dentro del rectángulo:</p>
+
+            <div id="cajita" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="perrito" src="Imagenes/perrito.jpg" draggable="true" ondragstart="drag(event)" alt="Eco">
+
+
+            <hr>
+
+            <p class="top"><strong>Venta de Celulares</strong></p><br>
+
+            <p>Selecciona la cantidad de productos que deseas adquirir</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>iPhone X</th>
+                            <th>Huawei P30</th>
+                            <th>Samsung S10</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$23,000</td>
+                            <td>$18,000</td>
+                            <td>$17,000</td>
+                        </tr>
+                        <tr>
+                            <td><img src="Imagenes/iphone.jpg" width="140" height="160" border= "3" alt="iphone"></td>
+                            <td><img src="Imagenes/huawei.jpg" width="140" height="160" border= "3"alt="huawei"></td>
+                            <td><img src="Imagenes/samsung.png"width="140" height="160" border= "3" alt="samsung"></td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <input id = "cel1" type = "number" >
+                            </td>
+                            <td>
+                                <input id = "cel2" type = "number">
+
+                            </td>
+                            <td>
+                               <input id = "cel3" type = "number">
+
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td>
+                        </tr>
+
+                    </tfoot>
+                </table>
+            
+                <p class="ayuda" onmouseover="consejo()" onmouseout="quitarConsejo()">¿Qúe tipo de dato se espera?</p><br>
+                
+                <div class="consejo" id="respuesta">
+                    Un valor de tipo numérico (Ej. 10), se puede seleccionar mediante las flechitas que proporciona la forma o directamente desde el teclado. Evita ingresar números negativos. 
+                </div>
+
+            
+                <button onclick="agregarProducto()">Comprar</button>
+            
+                <p><strong> Total a pagar: </strong></p>
+                <p id="pago"></p><br>
+
+                <hr>
+
+
+
+        </section>
+        
+     
+        
+        
+        
+
+
+        <hr>
+        
+        <section>
+             
+            <h2 id="biblio"> Bibliografía </h2>
+
+            <ul>
+                <li>[1] <a href="https://desarrolloweb.com/articulos/atributo-position-css.html">https://desarrolloweb.com/articulos/atributo-position-css.html</a></li>
+                <li>[2] <a href="https://developer.mozilla.org/es/docs/Web/CSS/visibility">https://developer.mozilla.org/es/docs/Web/CSS/visibility</a></li>
+                <li>[3] <a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index">https://developer.mozilla.org/es/docs/Web/CSS/z-index</a></li>
+            </ul>
+            <hr>
+        </section>
+        
+        
+    </main>
+    
+     
+         
+        <footer>
+            <p class = "footer"><strong>Brackets</strong> </p>
+            <p><a href="http://brackets.io">Brackets.io</a> </p>
+        </footer>
+        
+        <script type = "text/javascript" src="script.js"></script>
+        
+     </body>
+</html>
