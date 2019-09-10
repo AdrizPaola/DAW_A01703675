@@ -1,0 +1,178 @@
+
+  <body>
+  
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/1.jpeg">
+      <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="container text-center">
+                <h1 class="title">Laboratorio 7</h1>
+                <p class="description mb-0">Adriana Paola</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+     
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Mi "blog-cito" de prueba</h2>
+                <p class="pb-0">Este es un pequeño blog en el que se implementan algunos de los elementos que nos ofrece <a rel="nofollow" href="https://getbootstrap.com/">Bootstrap</a>
+                </p>
+              </div>
+            </div>
+            <!-- Brown bg -->
+            <div class="col-md-5">
+              <div class="tm-welcome-right">
+                <i class="fas fa-4x fa-address-card p-3 tm-welcome-icon"></i>
+                <p class="mb-0"> Mi nombre completo es Adriana Paola Salinas García tengo 19 años de edad, originaria del Estado de Hidalgo y cursando mi 4to semestre de la carrera de Ingeniería en Sistemas Computacionales.
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="tm-welcome-title">Preguntas:</h2>
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.
+                </h4>
+                <p class="mb-0">
+                  Muestra información del estado o configuración actual de PHP.
+                </p>
+                <ol class="mb-0">
+                  <li><strong>INFO_ENVIRONMENT: </strong> Información de las variables de entorno. </li>
+                  <li><strong>INFO_LICENSE: </strong> Información de Licencia de PHP. </li>
+                  <li><strong>INFO_CONFIGURATION: </strong> Valores Locales y Maestros actuales de las directivas PHP. [1]</li>
+                </ol>
+              </div>
+            </div>
+
+              
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?
+                </h4>
+                <p class="mb-0">
+                  En lugar de usar php.ini-development usar php.ini-production. [2]
+                </p>
+              </div>
+            </div>
+              
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.
+                </h4>
+                <p class="mb-0">
+                  Se establece una petición de un archivo HTML residente en el servidor (ordenador conectado a la red) el cual es enviado e interpretado por el navegador (el cliente). [3]
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/fondo1.jpeg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-bg-white-transparent">
+                <i class="fas fa-5x fa-briefcase tm-contact-item-icon"></i>
+                <h2 class="tm-welcome-title">Referencias:</h2> 
+           
+                <p class="pb-0">[1]<a rel="nofollow" href="https://www.php.net/manual/es/function.phpinfo.php">https://www.php.net/manual/es/function.phpinfo.php</a> 
+                </p>
+                <p class="pb-0">[2]<a rel="nofollow" href="https://www.php.net/manual/en/migration53.ini.php">https://www.php.net/manual/en/migration53.ini.php</a> 
+                </p>
+                <p class="pb-0">[3]<a rel="nofollow" href="http://www.adelat.org/media/docum/nuke_publico/lenguajes_del_lado_servidor_o_cliente.html">http://www.adelat.org/media/docum/nuke_publico/lenguajes_del_lado_servidor_o_cliente.html</a> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="tm-bg-white-transparent">
+          <div class="row">
+            <div class="col-12">
+              <div class="container">
+                <h3>Ejercicios con arreglos</h3><br>
+
+                <form action= "problema1.php" method="POST">
+                    <h5 class="center">Calcular Promedio</h5>
+                        <label>Ingrese el arreglo separando con espacios las cifras</label>
+                            <input name="arreglo">
+                            <br>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar" name="Enviar">
+                        <br>
+                </form>
+
+                <form action= "problema2.php" method="POST">
+                    <h5 class="center">Calcular Mediana</h5>
+                        <label>Ingrese el arreglo separando con espacios las cifras</label>
+                            <input name="arreglo">
+                            <br>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar" name="Enviar">
+                        <br>
+                </form>
+
+                <form action= "problema3.php" method="POST">
+                    <h5 class="center">Enlistado</h5>
+                        <label>Ingrese el arreglo separando con espacios las cifras</label>
+                            <input name="arreglo">
+                            <br>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar" name="Enviar">
+                        <br>
+                </form>
+
+
+                <form action="problema4.php" method="POST">
+                  <h5>Cuadrados y cubos</h5>
+                    <label>Ingrese un número</label>
+                    <input name="potencia" type="number" value=0 >
+                    <br>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                    <br>
+                </form>
+
+
+                <form action="problema5.php" method="POST">
+                  <h5> Theatre Square</h5>
+                  <p>La Plaza del Teatro en la ciudad capital de Berland tiene una forma rectangular con un tamaño de n × m metros. Con motivo del aniversario de la ciudad, se tomó la decisión de pavimentar la Plaza con losas de granito cuadradas. Cada losa es del tamaño a × a. <br> ¿Cuál es la menor cantidad de losas necesarias para pavimentar la Plaza? Está permitido cubrir la superficie más grande que la Plaza del Teatro, pero la Plaza tiene que estar cubierta. No está permitido romper las losas. Los lados de las losas deben ser paralelos a los lados de la plaza. <br> La entrada contiene tres números enteros positivos en la primera línea: n, my a (1 ≤ n, m, a ≤ 109). <br> Examples: <br> Input: 6 6 4 <br> Output: 4 </p>
+                    <label>Ingrese los números separando con espacios las cifras</label>
+                            <input name="arreglo">
+                            <br>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar" name="Enviar">
+                        <br>
+                </form>
+
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </body>
+    
