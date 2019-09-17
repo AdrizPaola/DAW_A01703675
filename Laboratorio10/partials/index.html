@@ -1,0 +1,172 @@
+
+  <body>
+  
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/1.jpeg">
+      <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="container text-center">
+                <h1 class="title">Laboratorio 10</h1>
+                <p class="description mb-0">Adriana Paola</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+     
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Mi "blog-cito" de prueba</h2>
+                <p class="pb-0">Este es un pequeño blog en el que se implementan algunos de los elementos que nos ofrece <a rel="nofollow" href="https://getbootstrap.com/">Bootstrap</a>
+                </p>
+              </div>
+            </div>
+            <!-- Brown bg -->
+            <div class="col-md-5">
+              <div class="tm-welcome-right">
+                <i class="fas fa-4x fa-address-card p-3 tm-welcome-icon"></i>
+                <p class="mb-0"> Mi nombre completo es Adriana Paola Salinas García tengo 19 años de edad, originaria del Estado de Hidalgo y cursando mi 4to semestre de la carrera de Ingeniería en Sistemas Computacionales.
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="tm-welcome-title">Preguntas:</h2>
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Por qué es una buena práctica separar el controlador de la vista?
+                </h4>
+                <p class="mb-0">
+                  Porque de ese modo se pueden separar los componentes de nuestra aplicación en base a la responsabilidad que tienen, por lo que, cuando se realiza un cambio en alguna parte del código este no afectará ninguna otra parte. [1]
+                </p>
+              </div>
+            </div>
+
+              
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+                </h4>
+                <ol class="mb-0">
+                  <li><strong>$_GLOBALS: </strong> Hace referencia a todas las variables disponibles en el ámbito global. </li>
+                  <li><strong>$_SERVER: </strong> Es un array que contiene información, tales como cabeceras, rutas y ubicaciones de script. </li>
+                  <li><strong>$_FILES: </strong> Una variable tipo array asociativo de variables pasadas al script actual a través de Cookies HTTP.  </li>
+                  <li><strong>$_COOKIE: </strong> es un array que contiene información, tales como cabeceras, rutas y ubicaciones de script. </li>
+                  <li><strong>$_REQUEST: </strong>Un array asociativo que por defecto contiene el contenido de $_GET, $_POST y $_COOKIE.  </li>
+                  <li><strong>$_ENV: </strong> Una variable tipo array asociativo de variables pasadas al script actual a través del método del entorno.  [2]</li>
+                </ol>
+              </div>
+            </div>
+              
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
+                </h4>
+                <ol class="mb-0">
+                  <li><strong>base_convert: </strong> Convertir un número entre bases arbitrarias</li>
+                  <li><strong>cubrid_free_result:  </strong> Liberar la memoria ocupada por los datos del resultado </li>
+                  <li><strong>dbplus_chdir: </strong> Obtener/Estabecer el directorio virtual actual de la base de datos  </li>
+                  <li><strong>filepro_fieldname: </strong> Obtiene el nombre de un campo [3]</li>
+                </ol>
+              </div>
+            </div>
+
+             <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Qué es XSS y cómo se puede prevenir?
+                </h4>
+                <p class="mb-0">
+                  Es una vulnerabilidad conocida como Cross-site Scripting en la que los atacantes explotan la confianza que un usuario tiene en un sitio en particular y volver peligroso para sus usuarios a un sitio legítimo.
+                        Para evitarlo se puede contar con una solución de seguridad instalada y actualizada. Los usuarios lo pueden prevenir viendo el enlace URL y asegurándose que sea seguro. Los desarrolladores deben prevenir los ataques XSS al escapar de su output usando htmlspecialchars () o htmlentities ().
+                        Ambas funciones de PHP convierten los caracteres problemáticos en entidades HTML, lo que hace que el código inyectado se imprima de manera inofensiva y no se renderice. [4]
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/fondo1.jpeg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-bg-white-transparent">
+                <i class="fas fa-5x fa-briefcase tm-contact-item-icon"></i>
+                <h2 class="tm-welcome-title">Referencias:</h2> 
+           
+                <p class="pb-0">[1]<a rel="nofollow" href="https://codigofacilito.com/articulos/mvc-model-view-controller-explicado">https://codigofacilito.com/articulos/mvc-model-view-controller-explicado</a> 
+                </p>
+                <p class="pb-0">[2]<a rel="nofollow" href="https://www.php.net/manual/es/language.variables.superglobals.php">https://www.php.net/manual/es/language.variables.superglobals.php</a> 
+                </p>
+                <p class="pb-0">[3]<a rel="nofollow" href="https://www.php.net/manual/es/indexes.functions.php">https://www.php.net/manual/es/indexes.functions.php</a> 
+                </p>
+                <p class="pb-0">[4]<a rel="nofollow" href="https://www.welivesecurity.com/la-es/2015/04/29/vulnerabilidad-xss-cross-site-scripting-sitios-web/">https://www.welivesecurity.com/la-es/2015/04/29/vulnerabilidad-xss-cross-site-scripting-sitios-web/</a> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+
+
+        <div class="tm-bg-white-transparent">
+          <div class="row">
+            <div class="col-12">
+              <div class="container">
+                <h2 class="tm-welcome-title">Ejercicio:</h2>
+                <form action="registro_Controller.php" id="forma" method="post">
+                    
+                    <label>Ingresa tu nombre:</label><br>
+				    <input type="text" name="nombre" id="nombre"><p id="retro1" required></p><br>
+                    <br>
+                    
+                    <label>Ingresa tu correo:</label><br>
+				    <input type="text" name="correo" id="correo"><p id="retro2" required></p>
+                    <br>
+                    
+                    <h4>Calcula tu IMC:</h4>
+                    <br>
+                    
+                    <label>Peso:</label><br>
+				    <input type="number" name="peso" id="peso"> kg<p id="retro3" required></p> <br>
+                    
+                    <label>Altura:</label><br>
+				    <input type="number" name="altura" id="altura"> centímetros  <p id="retro4" required></p> <br>
+                    
+                  
+                    <input class="btn btn-primary" onclick="resultados()" type="submit" name="calcular" value="Calcular" id="calcular"/>
+                    
+                </form>
+
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </body>
+    
