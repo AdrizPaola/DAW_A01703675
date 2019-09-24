@@ -1,0 +1,25 @@
+LABORATORIO 10: Conociendo el ambiente de SQL Server   ---- A01703675
+
+¿Qué muestra la instrucción sp_help materiales?
+Muestra la descripción de la tabla materiales, las columnas y sus tipos de datos, la longitud, si se acepta tener un valor nulo.
+Despliega también el nombre del dueño de la tabla, el tipo, la fecha de creación y hora.
+
+
+¿Qué efecto tuvo esta instrucción?
+Crear todas las tablas indicadas con los campos especifícados.
+
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+No tenemos que ejecutar bloque por bloque e ingresando cada valor, ejecuta varias de operaciones dentro de un archivo.
+
+
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+Contienen los valores de los atributos de la tabla, separados por una coma.
+
+
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+El contenido de .csv es lo mismo que el de .sql. El contenido se transfirió correctamente.
+
+
+¿Qué sucedió?
+Selecciona y muestra todos los renglones de la tabla materiales.
