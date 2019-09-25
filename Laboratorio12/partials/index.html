@@ -1,0 +1,129 @@
+
+  <body>
+  
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/1.jpeg">
+      <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="container text-center">
+                <h1 class="title">Laboratorio 12</h1>
+                <p class="description mb-0">Adriana Paola</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+     
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Mi "blog-cito" de prueba</h2>
+                <p class="pb-0">Este es un pequeño blog en el que se implementan algunos de los elementos que nos ofrece <a rel="nofollow" href="https://getbootstrap.com/">Bootstrap</a>
+                </p>
+              </div>
+            </div>
+            <!-- Brown bg -->
+            <div class="col-md-5">
+              <div class="tm-welcome-right">
+                <i class="fas fa-4x fa-address-card p-3 tm-welcome-icon"></i>
+                <p class="mb-0"> Mi nombre completo es Adriana Paola Salinas García tengo 19 años de edad, originaria del Estado de Hidalgo y cursando mi 4to semestre de la carrera de Ingeniería en Sistemas Computacionales.
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="tm-welcome-title" id="Preguntas">Preguntas:</h2>
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Por qué es importante hacer un session_unset() y luego un session_destroy()?
+                </h4>
+                <p class="mb-0">
+                  Porque con session_unset() se pueden borrar variables específicas de una sesión lo cual nos permite alterar la información de una sesión, mientras que con un session_destroy() elimina todo lo que se almacena de la sesión actual, generalmente se usa cuando el usuario va a ser desconectado.[1]
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Cuál es la diferencia entre una variable de sesión y una cookie?
+                </h4>
+                <p class="mb-0">
+                  La principal diferencia entre una sesión y una cookie es que los datos de la sesión se almacenan en el servidor, mientras que las cookies almacenan los datos en el navegador del visitante. Las sesiones usan un identificador de sesión para ubicar los datos de sesión de un usuario en particular. Este identificador de sesión normalmente se almacena en el navegador web del usuario en una cookie, pero los datos confidenciales que deben ser más seguros, como la identificación del usuario, el nombre, etc., siempre permanecerán en el servidor. [2]
+                </p>
+              </div>
+            </div>
+
+
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?
+                </h4>
+                <p class="mb-0">
+                  Se revisan las variables de sesión y en caso de que ya existan otras con el mismo nombre se le notifica al usuario.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="tm-portfolio-item"> 
+              <div class="tm-portfolio-description">
+                <h4 class="tm-text-green">
+                  ¿Qué es CSRF y cómo puede prevenirse?
+                </h4>
+                <p class="mb-0">
+                  Se producen cuando un atacante provoca que el usuario ejecute aaciones de forma no intencionada en algún sitio donde se había uniciado sesión. Tolo que puede hacer el uduario como actualizar el perfil o postear mensajes lo puede hacer también el atacante.
+                  Para prevenirlo se debe asociar al usuario con un tipo de identificador único (token) que se puede estar verificando después.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="img/fondo1.jpeg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-bg-white-transparent">
+                <i class="fas fa-5x fa-briefcase tm-contact-item-icon"></i>
+                <h2 class="tm-welcome-title" id="Referencias">Referencias:</h2> 
+           
+                <p class="pb-0">[1]<a rel="nofollow" href="https://code.tutsplus.com/es/tutorials/how-to-use-sessions-and-session-variables-in-php--cms-31839">https://code.tutsplus.com/es/tutorials/how-to-use-sessions-and-session-variables-in-php--cms-31839</a> 
+                </p>
+                <p class="pb-0">[2]<a rel="nofollow" href="https://www.rephp.com/cual-es-la-diferencia-entre-session-y-cookie-en-php.html">https://www.rephp.com/cual-es-la-diferencia-entre-session-y-cookie-en-php.html</a> 
+                </p>
+                <p class="pb-0">[3]<a rel="nofollow" href="https://diego.com.es/ataques-csrf-cross-site-request-forgery-en-php">https://diego.com.es/ataques-csrf-cross-site-request-forgery-en-php</a> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+      
+    
