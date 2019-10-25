@@ -1,0 +1,9 @@
+<?php
+    require_once("modelo.php");
+    include_once("partials/_header.html");
+    include_once("partials/_vistaZombies.html");
+    historialZombies();
+    cantidadZombies();
+    estado();
+    include_once("partials/_footer.html");
+?>
