@@ -1,0 +1,46 @@
+   <div class="row">
+      <footer class="col-12">
+        <p class="text-center tm-copyright-text">
+        Copyright 2019 Adriana Paola Salinas 
+
+        - Editor: <a rel="nofollow" href="http://brackets.io/">Brackets</a></p>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ajax.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Porfavor utiliza Chrome or Firefox para una mejor experiencia!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  
+</html>
